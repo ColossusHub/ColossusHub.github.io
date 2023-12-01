@@ -24,7 +24,7 @@ The notebook used in the demo is adopted from [@Vrsen](https://www.youtube.com/w
 In this video, we showed running inference for Llama 2 70B through our [vLLM AMD port](#vllm-amd-port) and connecting [Chatbot UI](https://github.com/mckaywrigley/chatbot-ui) to the model backend. We made some tweaks to make Chatbot UI to work with a custom backend model. To test it out yourselve, please [sign up](#sigup-to-use-colossus) for the free trial version of Colossus.
 
 # Sigup to use Colossus
-You can test our baby Colossus cloud service for free for two days. Baby Colossus will have all environment configured for you to run inference using vLLM and train model using the Jupyter notebook for free. Plese sign up our waitlist here
+You can test our baby Colossus cloud service for free for two days. Baby Colossus will have all environment configured for you to run inference using vLLM and train model using the Jupyter notebook for free. Plese sign up our waitlist [here](https://forms.gle/EVHTfyW1fmXEzwRQ7).
 
 * * *
 [Slack](https://join.slack.com/t/colossus-9h48252/shared_invite/zt-27wnzrsuv-Du4mNSac87lqYksM83I2pw)   
