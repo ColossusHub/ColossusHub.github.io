@@ -1,3 +1,3 @@
-# Colossus AMD Cloud
+# Colossus Cloud
 
-The github page to update information regards to the Colossus.
+This GitHub page serves as a resource for updates and information regarding Colossus Cloud.

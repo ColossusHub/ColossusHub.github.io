@@ -1,6 +1,17 @@
 ---
 layout: default
 ---
+# Our Mission
+In response to the high demand for GPU cards for Large Language Model (LLM) training and referencing, and the scarcity of NVIDIA GPUs, we are a team of engineers dedicated to bridging the software gap for AMD hardware. Although AMD hardware is more readily available, it often lacks compatibility with most popular LLM frameworks.
+
+Our initial step towards this goal involved porting the widely-used LLM framework, [vLLM](https://github.com/vllm-project/vllm) (which supports PagedAttention, FlashAttention2, and continuous batching), to AMD hardware. We established a server named Colossus, equipped with 4 Mi250 GPUs. We evaluated its performance using a benchmarking script from LLM against NVIDIA's A100(40G) and A100(80G), focusing on the Llama2 13B and Llama2 70B models. Below are the performance graphs we obtained:
+
+![Llama 2 13B Throughput](./assets/llama2-13b-throughput.png){:width="490x" height="348px"}
+![Llama 2 70B Throughput](./assets/llama2-70b-throughput.png){:width="490px"}
+
+The graph illustrates that for the 13B model, we compare single GPU cards. In the case of the 70B model, the comparison is between 8 NVIDIA cards and 4 AMD cards. This is primarily because the total RAM of the 4 AMD cards falls between that of 8 NVIDIA 40G and 8 NVIDIA 80G cards. Notably, as the model size increases, the performance gap diminishes, likely due to AMD GPUs having fewer nodes and higher bandwidth per node, leading to reduced overall communication overhead. Below are the hardware specifications for reference:
+
+![hardware spec](./assets/hardware-specs.png){:width="990px"}
 
 # Demo
 ## Fine-Tuning MPT-7B-Instruct with Jupyter Notebook
