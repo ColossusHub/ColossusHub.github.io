@@ -13,6 +13,8 @@ The graph illustrates that for the 13B model, we compare single GPU cards. In th
 
 ![hardware spec](./assets/hardware-specs.png){:width="990px"}
 
+Through the experiments conducted, we aim to demonstrate that AMD is a cost-effective option, particularly as it is available at a significantly lower price compared to its NVIDIA counterpart.
+
 # Demo
 ## Fine-Tuning MPT-7B-Instruct with Jupyter Notebook
 [Video Demo](https://www.loom.com/share/29ce1195945d4971ab0675b2a9565ff4?sid=547557a9-bc7c-4eef-b08f-dc8d7667cc30)
