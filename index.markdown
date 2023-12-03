@@ -77,7 +77,7 @@ We created a branch from the original vLLM repository on October 8, 2003, and co
     ```
 
 ## Quantization
-
+We have also ported AWQ to ROCM.  Our implementation is built on the ROCM WMMA library to replace the PTX assembly from the original implementation.  We have implemented a matrix multiply with dequantization that supports multiple different macro tile sizes along with prefetching.
 
 # Register for Colossus Access
 Experience our Colossus cloud service at no cost for two days. With Baby Colossus, you'll have a fully configured environment ready for running vLLM inferences and training models using Jupyter notebook, all free of charge. Please join our waitlist by signing up [here](https://forms.gle/EVHTfyW1fmXEzwRQ7).
